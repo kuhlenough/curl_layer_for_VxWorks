@@ -1,0 +1,19 @@
+/* layer.vsbl file for cURL layer  */
+/*
+ * Copyright (c) 2022 Wind River Systems, Inc.
+ *
+ */
+
+Layer CURL {
+    SYNOPSIS        cURL command 
+    VERSION         7.86.0.0
+    FEATURE         OPEN_SOURCE
+    VENDOR          Wind River
+    VSB_REQUIRES    CORE_RTP
+    LAYER_REQUIRES  UTILS_UNIX UTILS_WRCC ZLIB OPENSSL SERVICE_UN USER_MODE_SOCKET
+    SUBSCRIBE       UTILS_UNIX
+    OPTIONAL        YES
+    DEFAULT         NO
+    DOC_BUILD       NO
+    HELP            The cURL command, ( not the cURL library which VX already has )
+}
